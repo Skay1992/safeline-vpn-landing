@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Современный VPN-сервис для простого подключения, защиты соединения и повседневного доступа."
+    />
+    <title>SafeLine VPN — быстрый и простой VPN</title>
+    <link rel="icon" type="image/png" href="public/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Основное меню">
+        <a class="brand" href="#" aria-label="SafeLine VPN" data-scroll="top">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="public/logo.png" alt="" />
+          </span>
+          <span>SafeLine VPN</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Открыть меню</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-panel" id="site-menu">
+          <ul class="nav-links">
+            <li><a href="#" data-scroll="top">Главная</a></li>
+            <li><a href="#" data-scroll="benefits">Преимущества</a></li>
+            <li><a href="#" data-scroll="how">Как подключиться</a></li>
+            <li><a href="#" data-scroll="plans">Тарифы</a></li>
+            <li><a href="#" data-scroll="faq">FAQ</a></li>
+            <li><a href="#" data-scroll="support">Поддержка</a></li>
+            <li><a href="#" data-placeholder-message="Личный кабинет появится в следующей версии.">Личный кабинет</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a class="btn btn-ghost btn-small" href="https://t.me/OpenAccessVPN_bot" target="_blank" rel="noopener noreferrer">Telegram-бот</a>
+            <a class="btn btn-primary btn-small nav-connect" href="#" data-placeholder-message="Подключение пока недоступно в демонстрационной версии.">
+              <span class="connect-label-long">Подключить VPN</span>
+              <span class="connect-label-short">Подключить</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              Защищённый доступ без лишних сложностей
+            </div>
+            <h1 id="hero-title">VPN без лишних сложностей для телефона и компьютера</h1>
+            <p class="hero-subtitle">
+              Подключайтесь за несколько минут, защищайте соединение и пользуйтесь
+              интернетом без лишних сложностей.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-large" href="#" data-placeholder-message="Подключение пока недоступно в демонстрационной версии.">Подключить VPN</a>
+              <a class="btn btn-secondary btn-large" href="https://t.me/OpenAccessVPN_bot" target="_blank" rel="noopener noreferrer">Перейти в Telegram-бот</a>
+            </div>
+
+            <p class="hero-trust-line">
+              Без сложной настройки <span>·</span> Поддержка 24/7 <span>·</span>
+              Подходит для телефона и компьютера
+            </p>
+
+            <div class="hero-text-links">
+              <a class="btn btn-link" href="#" data-scroll="how">Как проходит подключение</a>
+              <a class="support-link" href="#" data-placeholder-message="Канал поддержки будет подключён позже.">
+                Нужна помощь? <span>Написать в поддержку</span>
+              </a>
+            </div>
+
+            <div class="trust-row" aria-label="Ключевые преимущества">
+              <div>
+                <strong>2 мин</strong>
+                <span>на старт</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>подсказки</span>
+              </div>
+              <div>
+                <strong>Безопасно</strong>
+                <span>для дома и поездок</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orbital-card">
+              <div class="orbit orbit-one"></div>
+              <div class="orbit orbit-two"></div>
+              <div class="planet">
+                <div class="planet-rotator">
+                  <svg class="earth-map" viewBox="0 0 360 360" focusable="false">
+                    <path class="earth-continent continent-americas" d="M92 96C119 78 151 89 161 113C170 135 151 145 143 164C133 188 151 203 142 225C134 247 108 248 96 229C84 211 93 192 82 176C70 158 51 151 55 129C58 113 74 106 92 96Z" />
+                    <path class="earth-continent continent-eurasia" d="M164 96C198 69 257 76 287 109C306 130 293 151 266 151C242 151 235 166 211 169C187 172 181 154 158 151C139 148 128 137 134 121C138 111 149 107 164 96Z" />
+                    <path class="earth-continent continent-africa" d="M198 166C219 158 244 169 252 193C260 218 244 238 226 264C214 281 194 274 189 253C184 234 172 222 177 199C180 185 186 172 198 166Z" />
+                    <path class="earth-continent continent-asia" d="M257 156C285 151 309 169 316 194C323 219 303 226 286 214C270 202 249 205 241 189C234 175 241 159 257 156Z" />
+                    <path class="earth-continent continent-australia" d="M254 249C271 240 296 244 307 260C316 273 303 287 281 284C262 282 245 270 254 249Z" />
+                  </svg>
+                  <div class="planet-grid"></div>
+                  <svg class="planet-routes" viewBox="0 0 360 360" focusable="false">
+                    <path class="planet-route" d="M52 176 C110 112 212 96 306 144" />
+                    <path class="planet-route" d="M64 230 C132 188 224 184 304 228" />
+                    <path class="planet-route" d="M92 116 C146 174 216 220 284 282" />
+                    <path class="route-signal signal-one" d="M52 176 C110 112 212 96 306 144" />
+                    <path class="route-signal signal-two" d="M64 230 C132 188 224 184 304 228" />
+                    <g class="planet-nodes">
+                      <circle class="planet-node node-one" cx="52" cy="176" r="4.4" />
+                      <circle class="planet-node node-two" cx="110" cy="112" r="4" />
+                      <circle class="planet-node node-three" cx="212" cy="96" r="4.2" />
+                      <circle class="planet-node node-four" cx="306" cy="144" r="4.5" />
+                      <circle class="planet-node node-five" cx="64" cy="230" r="3.8" />
+                      <circle class="planet-node node-six" cx="304" cy="228" r="4.2" />
+                      <circle class="planet-node node-seven" cx="284" cy="282" r="3.8" />
+                    </g>
+                  </svg>
+                  <div class="traffic-line traffic-line-one"></div>
+                  <div class="traffic-line traffic-line-two"></div>
+                  <div class="traffic-line traffic-line-three"></div>
+                </div>
+              </div>
+              <div class="shield-card">
+                <svg viewBox="0 0 56 56">
+                  <path
+                    d="M28 5 45 11.2v13.7c0 11-7 20.9-17 24.1-10-3.2-17-13.1-17-24.1V11.2L28 5Z"
+                    fill="url(#shieldGradient)"
+                  />
+                  <path
+                    d="m20.5 27.8 5.1 5.2 10.9-11.2"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="4"
+                  />
+                  <defs>
+                    <linearGradient id="shieldGradient" x1="13" x2="44" y1="8" y2="48">
+                      <stop stop-color="#6de8ff" />
+                      <stop offset=".52" stop-color="#40b7ff" />
+                      <stop offset="1" stop-color="#8d7cff" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="floating-note note-top">
+                <span></span>
+                Стабильное соединение
+              </div>
+              <div class="floating-note note-bottom">
+                <span></span>
+                Простая инструкция
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits" id="benefits" aria-labelledby="benefits-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Преимущества</span>
+            <h2 id="benefits-title">VPN, в котором легко разобраться</h2>
+            <p>
+              Мы убрали лишнюю техническую сложность и оставили то, что важно каждый
+              день: понятное подключение, поддержку и стабильную работу.
+            </p>
+          </div>
+
+          <div class="card-grid benefits-grid">
+            <article class="feature-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13 2 4 14h7l-1 8 10-13h-7l1-7Z" />
+                </svg>
+              </div>
+              <h3>Простое подключение</h3>
+              <p>Нажмите кнопку, выберите тариф и получите понятные шаги для старта.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3a8 8 0 0 0-8 8v3a3 3 0 0 0 3 3h1v-6H6a6 6 0 0 1 12 0h-2v6h1a3 3 0 0 0 3-3v-3a8 8 0 0 0-8-8Z" />
+                  <path d="M10 20h4" />
+                </svg>
+              </div>
+              <h3>Поддержка на всех этапах</h3>
+              <p>Если что-то непонятно, поможем подключиться и спокойно всё проверить.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+                  <path d="M9 18h6M8 6h8" />
+                </svg>
+              </div>
+              <h3>Подходит для телефона и компьютера</h3>
+              <p>Используйте VPN на привычных устройствах дома, в дороге или на работе.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 14a8 8 0 1 1 16 0" />
+                  <path d="m12 14 4-4" />
+                  <path d="M6 20h12" />
+                </svg>
+              </div>
+              <h3>Быстрая и стабильная работа</h3>
+              <p>Сервис рассчитан на повседневный доступ без постоянной возни с настройками.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section transparency" id="transparency" aria-labelledby="transparency-title">
+        <div class="container transparency-card">
+          <div class="transparency-intro">
+            <span class="section-kicker">Прозрачность сервиса</span>
+            <h2 id="transparency-title">Важные условия должны быть понятны до подключения</h2>
+            <p>
+              Мы не хотим, чтобы решение приходилось принимать вслепую. Перед
+              подтверждением подключения пользователь должен увидеть стоимость,
+              доступные устройства, правила сервиса и способ получить помощь.
+            </p>
+          </div>
+
+          <div class="transparency-list">
+            <article>
+              <span class="status-mark" aria-hidden="true"></span>
+              <div>
+                <h3>Стоимость без сюрпризов</h3>
+                <p>Цена и срок доступа показываются до подтверждения подключения.</p>
+              </div>
+            </article>
+            <article>
+              <span class="status-mark" aria-hidden="true"></span>
+              <div>
+                <h3>Понятные ограничения</h3>
+                <p>Количество устройств и условия использования указываются заранее.</p>
+              </div>
+            </article>
+            <article>
+              <span class="status-mark" aria-hidden="true"></span>
+              <div>
+                <h3>Помощь до выбора тарифа</h3>
+                <p>Вопрос о настройке можно задать до принятия решения.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how" id="how" aria-labelledby="how-title">
+        <div class="container split-section">
+          <div class="section-heading align-left">
+            <span class="section-kicker">Как подключиться</span>
+            <h2 id="how-title">Три простых шага до защищённого соединения</h2>
+            <p>
+              Процесс специально сделан понятным: без сложных слов, лишних настроек и
+              долгих объяснений.
+            </p>
+          </div>
+
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">1</span>
+              <div>
+                <h3>Нажмите кнопку подключения</h3>
+                <p>Начните с любой кнопки «Подключить VPN» на сайте.</p>
+              </div>
+            </article>
+            <article class="step-card">
+              <span class="step-number">2</span>
+              <div>
+                <h3>Выберите подходящий тариф</h3>
+                <p>Подберите срок доступа, который удобен именно сейчас.</p>
+              </div>
+            </article>
+            <article class="step-card">
+              <span class="step-number">3</span>
+              <div>
+                <h3>Получите инструкцию и начните пользоваться</h3>
+                <p>Следуйте коротким шагам, а если возникнут вопросы, мы поможем.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section plans" id="plans" aria-labelledby="plans-title">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-kicker">Тарифы</span>
+            <h2 id="plans-title">Выберите удобный срок подключения</h2>
+            <p>
+              Сравните сроки доступа. Стоимость и все условия будут показаны до
+              подтверждения подключения.
+            </p>
+          </div>
+
+          <div class="plans-notice" role="note">
+            <span class="notice-icon" aria-hidden="true">i</span>
+            <p>
+              Это демонстрационная версия тарифов: цены ещё не опубликованы, оплата
+              не подключена.
+            </p>
+          </div>
+
+          <div class="card-grid pricing-grid">
+            <article class="price-card">
+              <span class="plan-label">Старт</span>
+              <h3>1 месяц</h3>
+              <p class="price-placeholder">Цена будет добавлена позже</p>
+              <ul>
+                <li>Быстрый старт</li>
+                <li>Инструкция для подключения</li>
+                <li>Помощь при настройке</li>
+              </ul>
+              <a class="btn btn-card" href="#" data-placeholder-message="Выбор тарифа станет доступен после публикации цен.">Выбрать тариф</a>
+            </article>
+
+            <article class="price-card highlighted">
+              <span class="plan-label">Удобный срок</span>
+              <h3>3 месяца</h3>
+              <p class="price-placeholder">Цена будет добавлена позже</p>
+              <ul>
+                <li>Удобно для регулярного доступа</li>
+                <li>Поддержка при подключении</li>
+                <li>Понятные шаги настройки</li>
+              </ul>
+              <a class="btn btn-primary btn-card" href="#" data-placeholder-message="Выбор тарифа станет доступен после публикации цен.">Выбрать тариф</a>
+            </article>
+
+            <article class="price-card">
+              <span class="plan-label">Надолго</span>
+              <h3>12 месяцев</h3>
+              <p class="price-placeholder">Цена будет добавлена позже</p>
+              <ul>
+                <li>Долгосрочный доступ</li>
+                <li>Настройка на устройствах</li>
+                <li>Поддержка по вопросам сервиса</li>
+              </ul>
+              <a class="btn btn-card" href="#" data-placeholder-message="Выбор тарифа станет доступен после публикации цен.">Выбрать тариф</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newcomer" id="support" aria-labelledby="newcomer-title">
+        <div class="container">
+          <div class="help-card">
+            <div>
+              <span class="section-kicker">Для новичков</span>
+              <h2 id="newcomer-title">Не разбираетесь в VPN? Мы поможем подключиться.</h2>
+              <p>
+                Если вы не уверены, как установить и настроить VPN, мы дадим простую
+                инструкцию и поможем пройти подключение шаг за шагом.
+              </p>
+            </div>
+            <a class="btn btn-primary btn-large" href="#" data-placeholder-message="Канал поддержки будет подключён позже.">Получить помощь</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="section-heading align-left">
+            <span class="section-kicker">FAQ</span>
+            <h2 id="faq-title">Ответы на частые вопросы</h2>
+            <p>
+              Коротко и спокойно о том, что обычно волнует перед первым подключением.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>На каких устройствах работает VPN?</summary>
+              <p>VPN можно использовать на телефоне, планшете и компьютере. Точные инструкции добавим для каждого устройства.</p>
+            </details>
+            <details>
+              <summary>Сложно ли подключиться?</summary>
+              <p>Нет. Вы получите простую инструкцию и сможете пройти подключение шаг за шагом.</p>
+            </details>
+            <details>
+              <summary>Что делать, если VPN не работает?</summary>
+              <p>Напишите в поддержку. Мы поможем проверить настройки и подскажем, что сделать дальше.</p>
+            </details>
+            <details>
+              <summary>Можно ли подключить несколько устройств?</summary>
+              <p>Количество устройств будет указано в условиях выбранного тарифа перед подключением.</p>
+            </details>
+            <details>
+              <summary>Как получить поддержку?</summary>
+              <p>Нажмите кнопку поддержки или перейдите в Telegram-бот, чтобы задать вопрос и получить помощь.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta-card">
+            <span class="section-kicker">Можно начинать</span>
+            <h2 id="cta-title">Готовы подключиться?</h2>
+            <p>Перейдите к подключению, выберите удобный способ и получите простую инструкцию.</p>
+            <div class="cta-actions">
+              <a class="btn btn-primary btn-large" href="#" data-placeholder-message="Подключение пока недоступно в демонстрационной версии.">Подключить VPN</a>
+              <a class="btn btn-secondary btn-large" href="https://t.me/OpenAccessVPN_bot" target="_blank" rel="noopener noreferrer">Перейти в Telegram-бот</a>
+              <a class="btn btn-ghost btn-large" href="#" data-placeholder-message="Канал поддержки будет подключён позже.">Написать в поддержку</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#" data-scroll="top">
+            <span class="brand-mark" aria-hidden="true">
+              <img src="public/logo.png" alt="" />
+            </span>
+            <span>SafeLine VPN</span>
+          </a>
+          <p>
+            Спокойный и понятный VPN-сервис для повседневного доступа, защиты
+            соединения и уверенного подключения без технической путаницы.
+          </p>
+          <p class="footer-status">Демонстрационная версия. Подключение и оплата пока недоступны.</p>
+        </div>
+
+        <ul class="footer-links" aria-label="Ссылки в футере">
+          <li><a href="https://t.me/OpenAccessVPN_bot" target="_blank" rel="noopener noreferrer">Telegram-бот</a></li>
+          <li><a href="#" data-scroll="support">Поддержка</a></li>
+          <li><a href="#" data-placeholder-message="Личный кабинет появится в следующей версии.">Личный кабинет</a></li>
+          <li><a href="#" data-scroll="faq">FAQ</a></li>
+          <li><a href="#" data-placeholder-message="Политика конфиденциальности ещё не опубликована.">Политика</a></li>
+          <li><a href="#" data-placeholder-message="Условия сервиса ещё не опубликованы.">Условия сервиса</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <div class="demo-toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
