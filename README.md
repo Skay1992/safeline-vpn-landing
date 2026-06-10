@@ -62,9 +62,7 @@ npm run check:w3c
 ```text
 .
 ├── .github/
-│   ├── dependabot.yml
-│   └── workflows/
-│       └── quality.yml
+│   └── dependabot.yml
 ├── tests/
 │   └── site.spec.js
 ├── scripts/
