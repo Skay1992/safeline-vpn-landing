@@ -28,11 +28,54 @@ python3 -m http.server 4173
 http://127.0.0.1:4173/
 ```
 
+## Проверки качества
+
+Быстрая проверка структуры, локальных ресурсов, внутренних ссылок и базовых
+инвариантов доступности не требует npm:
+
+```bash
+python3 scripts/check_site.py
+```
+
+Полный набор проверок использует Node.js 24.8 или новее:
+
+```bash
+npm install
+npm run check
+```
+
+Полная проверка включает:
+
+- HTML-валидацию и линтинг JavaScript;
+- браузерные сценарии для компьютера и телефона;
+- автоматический аудит доступности через axe-core;
+- Lighthouse-бюджеты производительности, SEO и доступности.
+
+Отдельно можно отправить локальный HTML в W3C Nu Validator:
+
+```bash
+npm run check:w3c
+```
+
 ## Структура
 
 ```text
 .
+├── .github/
+│   ├── dependabot.yml
+│   └── workflows/
+│       └── quality.yml
+├── tests/
+│   └── site.spec.js
+├── scripts/
+│   ├── check_site.py
+│   └── validate_w3c.py
 ├── index.html
+├── lighthouserc.json
+├── package.json
+├── playwright.config.js
+├── robots.txt
+├── sitemap.xml
 ├── styles.css
 ├── script.js
 └── public/

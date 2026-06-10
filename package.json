@@ -1,0 +1,26 @@
+{
+  "name": "safeline-vpn-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "check:site": "python3 scripts/check_site.py",
+    "check:html": "html-validate index.html",
+    "check:w3c": "python3 scripts/validate_w3c.py",
+    "lint": "biome lint script.js playwright.config.js tests/site.spec.js",
+    "test": "playwright test",
+    "lighthouse": "lhci autorun",
+    "check": "npm run check:site && npm run check:html && npm run lint && npm test && npm run lighthouse"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.3",
+    "@biomejs/biome": "2.4.16",
+    "@lhci/cli": "0.15.1",
+    "@playwright/test": "1.60.0",
+    "html-validate": "11.5.3"
+  },
+  "engines": {
+    "node": ">=24.8.0"
+  }
+}

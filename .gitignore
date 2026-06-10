@@ -5,7 +5,9 @@
 
 node_modules/
 dist/
+.lighthouseci/
+playwright-report/
+test-results/
 
 .idea/
 .vscode/
-

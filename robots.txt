@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://skay1992.github.io/safeline-vpn-landing/sitemap.xml

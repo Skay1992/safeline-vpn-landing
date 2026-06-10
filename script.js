@@ -1,9 +1,45 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navPanel = document.querySelector(".nav-panel");
 const navLinks = document.querySelectorAll(".nav-panel a");
-const placeholderLinks = document.querySelectorAll('a[href="#"]');
+const actionLinks = document.querySelectorAll("a[data-scroll], a[data-placeholder-message]");
 const demoToast = document.querySelector(".demo-toast");
+const heroSection = document.querySelector(".hero");
+const finalCtaSection = document.querySelector(".final-cta");
 let toastTimer;
+
+if (heroSection && finalCtaSection && "IntersectionObserver" in window) {
+  let heroVisible = true;
+  let finalCtaVisible = false;
+
+  const updateSpaceStage = () => {
+    document.body.dataset.spaceStage = finalCtaVisible
+      ? "cta"
+      : heroVisible
+        ? "hero"
+        : "content";
+  };
+
+  const spaceStageObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.target === heroSection) {
+          heroVisible = entry.isIntersecting && entry.intersectionRatio >= 0.18;
+        }
+
+        if (entry.target === finalCtaSection) {
+          finalCtaVisible = entry.isIntersecting && entry.intersectionRatio >= 0.18;
+        }
+      });
+
+      updateSpaceStage();
+    },
+    { threshold: [0, 0.18, 0.35] },
+  );
+
+  spaceStageObserver.observe(heroSection);
+  spaceStageObserver.observe(finalCtaSection);
+  updateSpaceStage();
+}
 
 if (navToggle && navPanel) {
   const toggleMenu = (open) => {
@@ -52,7 +88,7 @@ if (navToggle && navPanel) {
   });
 }
 
-placeholderLinks.forEach((link) => {
+actionLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
 
@@ -60,7 +96,15 @@ placeholderLinks.forEach((link) => {
     const placeholderMessage = link.dataset.placeholderMessage;
 
     if (scrollTarget) {
-      document.getElementById(scrollTarget)?.scrollIntoView({ behavior: "smooth" });
+      const targetElement = document.getElementById(scrollTarget);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+
+        if (link.hash === `#${scrollTarget}`) {
+          history.pushState(null, "", link.hash);
+        }
+      }
     }
 
     if (placeholderMessage && demoToast) {
