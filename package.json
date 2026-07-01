@@ -14,11 +14,11 @@
     "check": "npm run check:site && npm run check:html && npm run lint && npm test && npm run lighthouse"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.11.3",
-    "@biomejs/biome": "2.4.16",
+    "@axe-core/playwright": "4.12.1",
+    "@biomejs/biome": "2.5.2",
     "@lhci/cli": "0.15.1",
-    "@playwright/test": "1.60.0",
-    "html-validate": "11.5.3"
+    "@playwright/test": "1.61.1",
+    "html-validate": "11.5.5"
   },
   "engines": {
     "node": ">=24.8.0"
